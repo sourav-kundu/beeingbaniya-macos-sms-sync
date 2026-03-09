@@ -21,19 +21,21 @@ It runs as a background daemon via macOS LaunchAgent, polling for new messages e
 npm install -g beeingbaniya-macos-sms-sync
 ```
 
+This installs a global command called `beeingbaniya-sync`.
+
 ## Setup
 
-1. **Get your webhook token** from https://www.beeingbaniya.com/settings/sms-integration
+1. **Get your webhook token** from https://www.beeingbaniya.com/settings/sms-integration (switch to the "Executable on Mac" tab)
 
-2. **Configure the tool:**
+2. **Grant Full Disk Access** to Terminal:
+   - Open **System Settings** > **Privacy & Security** > **Full Disk Access**
+   - Add **Terminal** (or your terminal app: iTerm, Warp, etc.)
+
+3. **Configure the tool:**
    ```bash
    beeingbaniya-sync setup
    ```
    Paste your webhook token when prompted.
-
-3. **Grant Full Disk Access** to Terminal:
-   - Open **System Settings** > **Privacy & Security** > **Full Disk Access**
-   - Add **Terminal** (or your terminal app: iTerm, Warp, etc.)
 
 4. **Start the daemon:**
    ```bash
