@@ -1,0 +1,24 @@
+{
+  "name": "beeingbaniya-macos-sms-sync",
+  "version": "1.0.0",
+  "description": "Sync bank SMS from macOS Messages to BeeingBaniya",
+  "bin": {
+    "beeingbaniya-sync": "./src/cli.js"
+  },
+  "scripts": {
+    "start": "node src/cli.js start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sourav-kundu/beeingbaniya-macos-sms-sync.git"
+  },
+  "homepage": "https://github.com/sourav-kundu/beeingbaniya-macos-sms-sync#readme",
+  "bugs": {
+    "url": "https://github.com/sourav-kundu/beeingbaniya-macos-sms-sync/issues"
+  },
+  "keywords": ["beeingbaniya", "sms", "finance", "macos", "imessage", "bank-transactions"],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
